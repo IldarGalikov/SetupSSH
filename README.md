@@ -10,7 +10,7 @@ The purpose of this project is to provide easy way to set up password less conne
 * `bash`
 * `ssh`
 * `ssh-keygen`
-* generated RSA keys (ssh-keygen -t rsa)
+* generated RSA keys by `ssh-keygen -t rsa`
 
 #### assumptions
 * This script does not use any fancy tools like bash "expect" module. This means that it could be used even from windows OS with  `git bash` tool.
@@ -24,3 +24,8 @@ The purpose of this project is to provide easy way to set up password less conne
         -u username. Default = result of whoami command
         -d path to file containing list of hosts to configure (Required)
         -k path to public key file. Default value is ~/.ssh/id_rsa.pub
+
+### Hints
+* Instead of typing password each time, I'd recommend to copy it once and paste it for each host.
+
+
