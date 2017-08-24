@@ -18,14 +18,16 @@ The purpose of this project is to provide easy way to set up password less conne
 
 ### Usage:
 
-   `./setupSSHKeys.sh -u <username> -d <path_to_file_with_hosts> -k <path_to_public_rsa_key>`
+   Usage: `./setupSSHKeys.sh -d <path_to_file_with_hosts>`
 
-        -a default value '1'. Set to 0 if you dont want to add alias
-        -u username. Default = result of whoami command
-        -d path to file containing list of hosts to configure (Required)
-        -k path to public key file. Default value is ~/.ssh/id_rsa.pub
+        
+        Required:
+                -d path to file containing list of hosts to configure
+        Optional:
+                -a enable to add alias to .bashrc
+                -u default value is the result of whoami command
+                -k path to public key file. Default value is ~/.ssh/id_rsa.pub
+                -p put this script to '~/' and set permissions to execute on remote hosts
 
 ### Hints
 * Instead of typing password each time, I'd recommend to copy it once and paste it for each host.
-
-
